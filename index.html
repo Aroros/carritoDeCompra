@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content=device-width initial-scale=1.0> -->
+    <title>Mi carrito de compras></title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- CARRITO DE COMPRAS-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesone/6.0.0-beta3/css/all.mi.css">
+     
+    <!-- fontawesone ICONOS
+    ================================================== -->
+    <script src="https://kit.fontawesome.com/760a2ec322.js" crossorigin="anonymous"></script> 
+    
+    <!--<link rel="stylesheet" href="https://font.googlepis.com/css2?family=roboto:wght@400;700&display=swap">-->
+    
+    <!--===================== google =====================-->
+    <link rel="stylesheet" href="/google-brands-solid.svg">
+
+    <!-------------  f  o  n  t  s   ----------------->
+    <link rel="stylesheet" href="./fonts/Isabelle.ttf"> <!--Letra Logo-->
+
+</head>
+<body>
+   
+   
+    <header>
+      
+      <div class="logo">
+          <!--<img src="imagenes/logo.jpg" alt="Logo" class="logo-img"> -->
+          <p>A RO ROS </p> 
+          <p>  Dulces Sueños</p>
+          
+      </div>
+      <div class="sticky-section">
+       <!-- es un encabezado fijo -->
+     <nav>
+       <ul class="nav-list">
+               <li> <a href="#inicio"> INICIO </a></li>
+               <li> <a href="#productos"> PRODUCTOS </a></li>
+               <li> <a href="#contacto">  CONTACTO </a></li>
+               <li> <a href="#bordado">  BORDADOS </a></li>
+               <li> <a href="#carrito" class="fas fa-shopping-cart" ></a></li>
+        </ul> 
+
+     </nav>    
+   </div> 
+  </header>
+   
+   
+   
+  
+<main>
+ <section id="inicio">
+         <!-------  Banner --------->
+          <div class="texto-bienvenida">
+                <p> Aquí, cada creación cuenta su propia historia </p>
+                <p>y se convierte en un recuerdo especial...</p>
+          </div>
+  </section>
+
+  
+  
+
+
+<section id="productos">
+  <h1><p class="titulo">Nuestra Galeria </p></h1>
+  
+      <div  id="contenedorProductos" class="producto">
+         
+      </div>
+        
+</section>
+    
+<section id="carrito">
+    <h1>Carrito</h1>
+    <ul>
+    
+    </ul>
+    <p>Total a pagar</p>
+    <input id="boton-borrar" type="button" value="Borrar Carrito">
+    <input id="boton-pagar" type="button" value="Ir a pagar">
+    <p id="mensajeCarrito"> </p>
+    
+</section>
+
+<section id="bordado">
+    <p class="titulo">En acción </p></h1>
+    <div class="video">
+          
+        <video width="480" height="360"  controls muted >
+            <source src="video/videoDenise.mp4" type="video/mp4" >
+            <track  src="textos.vtt" kind="subtitles" srclang="es" label="Español" >
+        </video>
+             <!-- no agrega subtitulos al video -->
+     <!--</div>-->
+     <!--<div class="video">       -->
+          <video width="480" height="360" controls muted >
+            <source src="video/video.mp4" type="video/mp4" >
+            <track  src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+          </video> 
+    </div>    
+</section>    
+
+    
+    
+ 
+  <section id="ubicacion">
+     
+    <div class="mapa">
+        <p class="titulo"> Como llegar </p> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5136077803922!2d-58.53550192514292!3d-34.66698466084075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc88cbf92965b%3A0x3e463e9a5feebf2b!2sCnel.%20Dorrego%20146%2C%20B1752%20Lomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728708711549!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div> 
+   </section> 
+    
+   
+   <section id="contacto"> 
+        
+        <div class="formulario">
+          <h1><p class="titulo"> Contactanos</p></h1> 
+            <Form action="https://formspree.io/f/mwpkkkza" method="post"> 
+            <p> <h3>Comunicate con nosotros </h3></p> 
+            <p>NOMBRE  :<input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre "> </p>
+            <p>EMAIL   :<input type="email" name="email" id="email" placeholder="escribe tu mail "> </p>
+            <p>CONSULTA:<textarea name="mensaje" id="mensaje" rows="4" cols="30" placeholder="escribe tu consulta"></textarea> </p>
+            <p><button type="submit">ENVIAR</button></p>
+        </div>
+   </section>
+
+   
+
+  </main>  
+  <p class="titulo" >Reseñas de Clientes</p>
+  <div class="reseñas"> <!--   ////////////////////////////////////-->
+     
+        <div class="reseña">
+              <h3>Cliente 1</h3>
+              <hr>
+              <p>"Excelente servicio, muy recomendados."</p>
+        </div>
+        <div class="reseña">
+              <h3>Cliente 2</h3>
+              <p>"Calidad y atención de primera. Volveré a comprar.  Los recomiendo."</p>
+        </div>
+        <div class="reseña">
+              <h3>Cliente 3</h3>
+              <hr>
+              <p>"Cumplieron todas mis expectativas. Muy contento con el resultado."</p>
+        </div>
+        
+        <!-- se puede agregar más reseñas     -->
+  </div>
+
+  
+    
+<!--*********************** FOOTER *******************-->
+
+<footer id="pagina-footer">
+      <div class="footer-container">
+          <!-- Columna 1: Imagen y nombre de la empresa -->
+          <div class="footer-column">
+              <img src="imagenes/logo.jpg"   alt="LOGO DE ARoRos para footer">
+              <h3>A Ro Ros Dulces Sueños</h3>
+              <p>Una empresa familiar. Vos nos decis como, </p>
+              <p>nosotros lo hacemos...</p>
+          </div>
+        
+          <!-- Columna 2: Enlaces útiles -->
+          <div class="footer-column">
+              <nav>
+                <ul>  
+                  <li><h3>Enlaces Útiles</h3></li>
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#">Quienes Somos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+                   <li><a href="https://goo.gl/maps/jEJ5vknYaA83XsCD6" title="google" class="fa-brands">Nuestra ubicación</a></li>
+                 </ul>
+              </nav>           
+          </div>
+
+          <!-- Columna 3: Redes sociales -->
+          <div class="footer-column">
+              <NAV>    
+                  <ul>
+                      <li><h3> Seguinos en nuestras redes </h3></li>
+                      <li><a href="https://www.facebook.com/ARoRosDulcesSuenos" title="facebook" class="fa fa-facebook" with="70"> Facebook</a></li>
+                      <li><a href="https://www.instagram.com/a_ro_ros/" title="Instagram" class="fa fa-instagram" with="50"> Instagram</a></li>
+                      <li><a href="https://www.google.com" target="_blank" class="fa fa-google"> Google</a></li>
+                                          
+                  </ul>
+               </NAV>
+               <br>
+          </div>
+      </div>    
+
+      <div class="finfooter">
+           <br>
+           <small> &copy; 2024 <b> A RO ROS DULCES SUEÑOS </b> Todos los Derechos Reservados.</small>
+           <br>
+      </div>
+       
+</footer>
+<script src="scripts.js" ></script>
+</body>
+</html>

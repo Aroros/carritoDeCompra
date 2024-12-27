@@ -1,0 +1,586 @@
+
+*{
+    margin:0 ;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+ body{
+  height: 100%;
+   color:grey;
+    font-size: 12px;
+    background-color: powderblue; 
+}
+ 
+
+h1{
+    color:grey;
+    font-size: 24px;
+    background-color: powderblue; 
+}
+h2{
+    color: rgb(12, 11, 11);
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.titulo{
+  background-color: lightblue;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+#cabecera{
+    background-color: lightblue; 
+    font-size: 12;
+    font-family: Arial, Helvetica, sans-serif;
+         
+}
+
+/*-------------------------------------------*/
+/* Estilos del header */
+@font-face {
+  font-family: 'MiFuente';
+  src: url('./fonts/Isabelle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+header {
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue; 
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000; /*queda arriba*/
+}
+
+.logo {
+  font-family: 'MiFuente', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  color:white;
+  flex-direction: column; /* Alineación en columna para el nombre de la empresa */
+  font-size:2rem;
+  padding: 20px;
+  /*font-weight: bold;*/
+
+  }
+
+
+
+header img {
+      width: 200px; /* Tamaño de la imagen de logo */
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      padding: 5%;
+
+}
+
+
+
+
+
+
+
+/*----------------------------------------*/
+
+nav a{
+    text-decoration:none;
+    display:inline;  /*--- en la misma linea-------------*/
+}   
+
+
+
+.sticky-section {
+    position: sticky;
+    top: 0; /* Fija la sección en la parte superior */
+    padding: 5px;
+    font-size: 15px; /*tamaño de letra del menu sticky*/
+    z-index: 1000; /* Asegura que esté en la parte superior */
+    background-color: lightblue; 
+
+}  
+.nav-list   {
+    text-align: right; 
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1em;
+    list-style: none; /*elimina los puntos de la lista*/
+    text-decoration: none; /*no aparece lo puntos de la lista*/
+}
+
+
+nav .nav-list  li {
+    display: inline-block; /*muestra una opcion al lado de la otra*/
+    margin-right: 20px;
+}
+/*----------------------------------ANTERIOR*/
+
+
+ /* Sección inicio */
+ #inicio {
+  width: 100%;
+  height: 100%; /* Ocupa el 100% de la pantalla */
+  background-image: url('./imagenes/SetBeltran.jpeg'); /* imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain; /* Asegura que la imagen completa se vea */
+}
+
+/* Texto sobre la imagen */
+.texto-bienvenida {
+  color:rgb(110, 109, 109);
+  text-align: center;
+  font-size:1.5em;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+
+  
+#bordado{
+  background-color: #f4f4f4;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.video source {
+    margin-top: 20px;
+    margin-left:20px;
+    height: 100%;
+    background-color:  #777;
+    display:flex;
+    flex-wrap: wrap;
+    flex:1 1 200px;
+    justify-content: space-between;
+    padding: 20%;
+    border-width: 10%;
+    align-items: center;
+    border: 1px solid rgb(62, 18, 221);
+
+}
+
+
+
+
+
+
+p.ubica{
+    text-align: center;
+
+}
+
+
+#ubicacion{
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+#contacto{
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.mapa{
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+/*=============================== I N I CI O  F O R M L A R I O ===
+/* Estilo del formulario */
+.formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+.formulario h2 {
+  margin-top: 10px;
+  color: #333;
+}
+
+
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario button:hover {
+  background-color: rgb(151, 125, 224);
+}
+
+/*=============  termina formulario ========================*/
+
+
+.producto :hover a{ 
+  color: #007bff; /* Cambia a azul en hover */
+
+}
+  .producto :hover img { /*agranda imagen del flex cuando pasamo el mouse*/
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.2);
+  }
+  
+
+
+/**********************************************************************/
+/* Estilo del contenedor principal */
+#productos {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+/* Estilo para cada producto */
+.producto {
+  text-align: center; /* Centra el contenido dentro de cada producto */
+  width: 30%; /* Cada producto ocupa el 30% del ancho del contenedor principal */
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar cada producto */
+  overflow: hidden; /* Oculta el contenido que sobrepase el tamaño de la tarjeta */
+}
+
+/* Estilo para cada imagen */
+.producto img {
+  width: 80%; /* el ancho que ocupa la imagen dentro del contenedor */
+  height: 40%;/*el alto que ocupa la imagen dentro del contenedor*/
+  border: 3px solid #333; /* Borde alrededor de cada imagen */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Estilo para el título y el enlace */
+.producto h2 a {
+  text-decoration: none; /* Quita subrayado del enlace */
+  color: #333; /* Color del texto */
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Cambio de color al pasar sobre el enlace */
+.producto h2 a:hover {
+  color: #007bff; /* Cambia a azul en hover */
+}
+
+
+.paginaProducto {
+  color :white;
+  background-color:rgba(65, 155, 240, 0.8);
+  text-align: Center; /* Centra el contenido dentro de cada producto */
+  font-size: 20px;
+}
+
+.paginaProducto img{
+  width: 80%; /* el ancho que ocupa la imagen dentro del contenedor */
+  height: 40%;/*el alto que ocupa la imagen dentro del contenedor*/
+  border: 3px solid #333; /* Borde alrededor de cada imagen */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
+/*****************************************************************************************/
+
+#carrito{
+  text-align: Center; /* Centra el contenido dentro de cada producto */
+  color:azure;
+  font-size: 20px;
+  width: 100%; /* Cada producto ocupa el 100% del ancho del contenedor principal */
+  margin-bottom: 20px;
+  background-color: rgba(131, 184, 233, 0.8); /* Fondo blanco semitransparente */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar cada producto */
+  overflow: hidden; /* Oculta el contenido que sobrepase el tamaño de la tarjeta */
+}
+
+    
+    
+
+a{ /*color de enlace*/
+    color: gray;
+    text-decoration:none;
+    }
+    
+ a:hover{
+    color: white;
+    }
+    
+ a:active{
+    color: cadetblue;
+ }
+
+ img:hover{
+    color: aqua;
+ }
+ 
+
+
+  /* Contenedor de la grilla */
+  .reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas de 300px en pantallas grandes, 1 en pantallas pequeñas */
+    background-color: #fff;
+    gap: 1rem;
+    padding: 20px;
+    height: 15rem; /* Alto fijo de la grilla */
+    padding:20px; 
+    margin-left: 2rem; /* Margen izquierdo */
+    flex-grow: 1; /* Para llenar el espacio disponible */
+    margin-bottom: 40px; /* Espacio inferior para evitar superposición con el footer */
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+
+
+  /* Estilo de cada tarjeta de reseña */
+  .reseña {
+    background-color: #fff;
+     width: 15rem;
+    /*height: 15px;*/
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-template-rows: 1fr 1fr 1fr; /* /////////*/ 
+    transition:all 0,35 ease-out;
+  }
+.reseña:hover{
+  transform: scale(1.1);             
+  /*transform:translateY((-15px))*/
+}
+   
+  .reseña h3 {
+    margin-top: 0;
+    color: #555;
+  }
+
+  .reseña p {
+    color: #777;
+  }
+
+  /* Media Queries para adaptarse a diferentes pantallas */
+  @media (max-width: 1024px) {
+    .reseñas {
+      grid-template-columns: repeat(3, 1fr); /*en pantallas grandes*/
+      
+    }
+    #productos {
+      flex-direction: row; /* Alinea los elementos en fila */
+
+      
+    }
+
+  #inicio {
+   height: 60vh; /* Aumenta la altura en pantallas grandes */
+  }
+
+
+
+
+  }
+
+  @media (max-width: 768px) {
+    .reseñas {
+      grid-template-columns: 1fr;/* Una columna en pantallas pequeñas */
+      grid-template-areas: "footer";   
+    }
+    #contenedorProductos {
+      display: flex; /* Activa Flexbox */
+      flex-wrap: wrap; /* Permite que los productos se ajusten a nuevas líneas */
+      gap: 20px; /* Espaciado entre los productos */
+      justify-content: space-evenly; /* Espaciado uniforme entre productos */
+      width: 50%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+    }
+    .producto .item {
+      width: calc(50% - 20px); /* 2 columnas en pantallas más pequeñas */
+    }
+    .nav ul {
+          display: none; /* Ocultar menú en pantallas pequeñas */
+      }
+  
+    
+  }
+  
+
+  @media (max-width: 500px) {
+    .footer-container {
+      flex-direction: column; /* Las columnas se apilan en una sola columna en pantallas pequeñas */
+      text-align: center;
+    }
+    #contenedorProductos {
+      width: 100%; /* 1 columna en pantallas muy pequeñas */
+      flex: 0 1 auto; /* Se adapta al tamaño del contenido */
+
+    }
+    #contenedorProductos .item {
+      flex: 1 1 100%; /* Ocupan todo el ancho del contenedor */
+    }
+    #contenedorProductos .item button {
+      width: 100%; /* Se adaptan al ancho del contenedor */
+      padding: 3px;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+.producto{
+width: 80%; /* Cada producto ocupa el 80% del ancho del contenedor principal */
+}
+    
+    .producto .item {
+      width: 100%; /* 1 columna en pantallas muy pequeñas */
+      flex: 1 1 100%;/* Los productos ocupan el 100% del ancho disponible.*/
+
+    }
+
+    
+   .reseñas{
+      grid-template-columns: minmax(200px,1fr);/*  15/12*/
+    } 
+    .reseña :hover{ 
+      transform :translateY(-15px)
+    }
+  }
+
+
+
+
+  /* Estilo del contenedor principal */ 
+.Productos {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+#contenedorProductos {
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Permite que los productos se ajusten a nuevas líneas */
+  gap: 20px; /* Espaciado entre los productos */
+  justify-content: space-evenly; /* Espaciado uniforme entre productos */
+  width: 75%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+}
+
+
+
+
+
+  
+ 
+
+/*---------------  F O O T E R ---------------------*/
+
+ #pagina-footer{
+  color: gray;
+  background-color: black; 
+ }
+ .finfooter{
+    background-color:black; 
+    text-align: center; 
+
+ }
+
+
+ footer nav li{
+   list-style:none;
+   text-align:left;
+ }
+ 
+
+/*====================================================*/
+
+   
+    /* Contenedor principal de las columnas */
+    .footer-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Permite que las columnas se adapten en pantallas pequeñas */
+      gap: 20px;
+      padding:20px;
+    }
+
+    /* Cada columna dentro del footer */
+    .footer-column {
+      flex: 1 1 30%; /* Flex-grow: ocupa espacio disponible, Flex-shrink: se reduce, Flex-basis: ancho mínimo */
+      min-width: 30%; /* Tamaño mínimo de cada columna */
+    }
+
+    /* Imagen y texto en la primera columna */
+    .footer-column img {
+      width: 200px; /* Tamaño de la imagen de logo */
+      height: auto;
+      display: block;
+      /*margin-bottom: 10px;*/
+      padding: 5%;
+    }
+
+    .footer-column h3 {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    
+
+    /* Ajustes para pantallas pequeñas */
+    
+    /* Estilos responsive */
+
+
